@@ -1,0 +1,33 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url('../Source/NavigationGif.gif');
+}
+
+.Navigation {
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url('../Source/NavigationBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.InfoIdentification {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left:-125px;
+    margin-top:-41px;
+    /*display:none;*/
+}
