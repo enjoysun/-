@@ -36,3 +36,14 @@ body {
     margin-top: -41px;
     display: none;
 }
+
+.Body-Font {
+    font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;
+    font-size: 30px;
+    font-weight: 500;
+    color: #808080;
+    position: absolute;
+    top: 80%;
+    opacity: 0.3;
+    display:none;
+}

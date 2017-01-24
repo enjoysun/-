@@ -12,19 +12,26 @@
                 <img src="../Source/NavigationFont.png" />
             </a>
         </div>
+        <span class="Body-Font">See You Again</span>
     </div>
     <script src="../Scripts/jquery-1.10.2.js"></script>
     <script type="text/javascript">
         $(function () {
             $(".Navigation").animate({
                 left: '50%',
-                opacity:1
+                opacity: 1
             }, 1000, function () {
                 $(".InfoIdentification").show();
                 $(".InfoIdentification").animate({
                     top: '50%',
-                    opacity:1
-                }, 1000);
+                    opacity: 1
+                }, 1000, function () {
+                    $(".Body-Font").show();
+                    $(".Body-Font").animate({
+                        left: '50%',
+                        opacity: 1
+                    },1000);
+                });
             });
         })
     </script>

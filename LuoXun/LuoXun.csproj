@@ -173,6 +173,11 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\btcss\bootstrap-theme.css" />
+    <Content Include="Content\btcss\bootstrap-theme.min.css" />
+    <Content Include="Content\btcss\bootstrap.css" />
+    <Content Include="Content\btcss\bootstrap.min.css" />
+    <Content Include="Content\layui.css" />
     <Content Include="Content\NavigationPage.css" />
     <Content Include="Demo\Index.html" />
     <Content Include="Demo\Navigationpage.html" />
@@ -182,6 +187,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\btcss\bootstrap-theme.css.map" />
+    <Content Include="Content\btcss\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -190,6 +197,25 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\bt\bootstrap.js" />
+    <Content Include="Scripts\bt\bootstrap.min.js" />
+    <Content Include="Scripts\bt\npm.js" />
+    <Content Include="Scripts\layui.js" />
+    <Content Include="Scripts\lay\dest\layui.all.js" />
+    <Content Include="Scripts\lay\dest\layui.mod.js" />
+    <Content Include="Scripts\lay\lib\jquery.js" />
+    <Content Include="Scripts\lay\modules\code.js" />
+    <Content Include="Scripts\lay\modules\element.js" />
+    <Content Include="Scripts\lay\modules\flow.js" />
+    <Content Include="Scripts\lay\modules\form.js" />
+    <Content Include="Scripts\lay\modules\laydate.js" />
+    <Content Include="Scripts\lay\modules\layedit.js" />
+    <Content Include="Scripts\lay\modules\layer.js" />
+    <Content Include="Scripts\lay\modules\laypage.js" />
+    <Content Include="Scripts\lay\modules\laytpl.js" />
+    <Content Include="Scripts\lay\modules\tree.js" />
+    <Content Include="Scripts\lay\modules\upload.js" />
+    <Content Include="Scripts\lay\modules\util.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -200,6 +226,17 @@
     <Content Include="Source\NavigationLogo.png" />
     <Content Include="Source\NavigationBack.jpg" />
     <Content Include="Source\NavigationGif.gif" />
+    <Content Include="Source\Navlogo_01.jpg" />
+    <Content Include="Source\Nav_02.jpg" />
+    <Content Include="Source\Nav_03.jpg" />
+    <Content Include="Source\Nav_04.jpg" />
+    <Content Include="Source\Nav_05.jpg" />
+    <Content Include="Source\Nav_06.jpg" />
+    <Content Include="Source\Nav_07.jpg" />
+    <Content Include="Source\Nav_08.jpg" />
+    <Content Include="Source\Nav_09.jpg" />
+    <Content Include="Source\Nav_10.jpg" />
+    <Content Include="Source\Nav_11.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

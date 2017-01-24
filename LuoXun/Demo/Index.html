@@ -3,12 +3,119 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
+    <link href="../Content/layui.css" rel="stylesheet" />
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url('../Source/Nav_09.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .Luoxun-Nav {
+        }
+
+
+        .Lunxun-Body {
+            background-image: url('../Source/Nav_10.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: 500px;
+        }
+
+        .Lunxun-Next {
+            background-image: url('../Source/Nav_11.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;
+            margin-left: 30px;
+            margin-right: 30px;
+            height: 100px;
+        }
+
+        .Body-Font {
+            font-family: Arial,'Times New Roman','Microsoft YaHei',SimHei;
+            font-size: 30px;
+            font-weight: 500;
+            color: #ffffff;
+            position: relative;
+            top: 20%;
+            opacity: 0.3;
+        }
+    </style>
 </head>
 <body>
-    
-    <canvas height="620" width="1360" id="canvas" style="position: absolute; height: 100%;">
-        <p>欢迎您</p>
-    </canvas>
-    <script src="../Scripts/star.js"></script>
+    <div class="Luoxun-Nav">
+        <ul class="layui-nav" lay-filter="filter" style="background-image:url('../Source/Nav_09.jpg')">
+            <!--<li class="layui-nav-item layui-this"><a href="">产品</a></li>-->
+            <li class="layui-nav-item">
+                <a  style="background-image:url('../Source/Navlogo_01.jpg');width:200px;background-repeat: no-repeat;
+            background-size: cover;
+            overflow-x: hidden;">zzzzz</a>
+            </li>
+            <li class="layui-nav-item"><a href="">首页</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">日本精美体验</a>
+                <dl class="layui-nav-child">
+                    <!-- 二级菜单 -->
+                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="">后台模版</a></dd>
+                    <dd><a href="">电商平台</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">干细胞</a>
+                <dl class="layui-nav-child">
+                    <!-- 二级菜单 -->
+                    <dd><a href="">小细胞</a></dd>
+                    <dd><a href="">老细胞</a></dd>
+                    <dd><a href="">肉包</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">日本精密医疗</a></li>
+            <li class="layui-nav-item"><a href="">男性专区</a></li>
+            <li class="layui-nav-item"><a href="">主题盛会</a></li>
+            <li class="layui-nav-item"><a href="">关于络熏</a></li>
+        </ul>
+    </div>
+    <div class="Lunxun-Body">
+        <span class="Body-Font">
+            Welcome to LUOXUN!
+        </span>
+    </div>
+    <div class="Lunxun-Next">
+
+    </div>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/layui.js"></script>
+    <script src="../Scripts/lay/modules/element.js"></script>
+    <script type="text/javascript">
+        layui.use('element', function () {
+            var element = layui.element();
+
+            //一些事件监听
+            element.on('nav(filter)', function (data) {
+                console.log(data);
+            });
+        });
+        $(function () {
+            ShakeFont();
+        })
+        function ShakeFont() {
+
+            $(".Body-Font").animate({
+                left: '20%',
+                opacity: 1
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
