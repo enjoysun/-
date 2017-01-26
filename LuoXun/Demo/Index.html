@@ -18,6 +18,11 @@
         }
 
         .Luoxun-Nav {
+            position: fixed;
+            top: 0px;
+            z-index: 999;
+            background-color:#222222;
+            width:100%;
         }
 
 
@@ -29,6 +34,7 @@
             margin-left: 30px;
             margin-right: 30px;
             height: 500px;
+            margin-top: 60px;
         }
 
         .Lunxun-Next {
@@ -54,45 +60,45 @@
 </head>
 <body>
     <div class="Luoxun-Nav">
-        <ul class="layui-nav" lay-filter="filter" style="background-image:url('../Source/Nav_09.jpg')">
-            <!--<li class="layui-nav-item layui-this"><a href="">产品</a></li>-->
-            <li class="layui-nav-item">
-                <a  style="background-image:url('../Source/Navlogo_01.jpg');width:200px;background-repeat: no-repeat;
-            background-size: cover;
-            overflow-x: hidden;">zzzzz</a>
-            </li>
-            <li class="layui-nav-item"><a href="">首页</a></li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">日本精美体验</a>
-                <dl class="layui-nav-child">
-                    <!-- 二级菜单 -->
-                    <dd><a href="">移动模块</a></dd>
-                    <dd><a href="">后台模版</a></dd>
-                    <dd><a href="">电商平台</a></dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">干细胞</a>
-                <dl class="layui-nav-child">
-                    <!-- 二级菜单 -->
-                    <dd><a href="">小细胞</a></dd>
-                    <dd><a href="">老细胞</a></dd>
-                    <dd><a href="">肉包</a></dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item"><a href="">日本精密医疗</a></li>
-            <li class="layui-nav-item"><a href="">男性专区</a></li>
-            <li class="layui-nav-item"><a href="">主题盛会</a></li>
-            <li class="layui-nav-item"><a href="">关于络熏</a></li>
-        </ul>
+        <div style="float:left;margin-left:100px;">
+            <img src="../Source/Navlogo_01.jpg" height="60px;" />
+        </div>
+        <div style="float:right;">
+            <ul class="layui-nav" lay-filter="filter" style="background-image:url('../Source/Nav_09.jpg')">
+                <!--<li class="layui-nav-item layui-this"><a href="">产品</a></li>-->
+                <li class="layui-nav-item"><a href="">首页</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">日本精美体验</a>
+                    <dl class="layui-nav-child">
+                        <!-- 二级菜单 -->
+                        <dd><a href="">移动模块</a></dd>
+                        <dd><a href="">后台模版</a></dd>
+                        <dd><a href="">电商平台</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">干细胞</a>
+                    <dl class="layui-nav-child">
+                        <!-- 二级菜单 -->
+                        <dd><a href="">小细胞</a></dd>
+                        <dd><a href="">老细胞</a></dd>
+                        <dd><a href="">肉包</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="">日本精密医疗</a></li>
+                <li class="layui-nav-item"><a href="">男性专区</a></li>
+                <li class="layui-nav-item"><a href="">主题盛会</a></li>
+                <li class="layui-nav-item"><a href="">关于络熏</a></li>
+            </ul>
+        </div>
     </div>
+    <div style="clear:both;"></div>
     <div class="Lunxun-Body">
         <span class="Body-Font">
             Welcome to LUOXUN!
         </span>
     </div>
     <div class="Lunxun-Next">
-
     </div>
     <script src="../Scripts/jquery-1.10.2.js"></script>
     <script src="../Scripts/layui.js"></script>
