@@ -222,6 +222,8 @@
     <Content Include="Scripts\star.js" />
     <Content Include="Scripts\swipe.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Source\gaofan01.jpg" />
+    <Content Include="Source\gaofan02.jpg" />
     <Content Include="Source\NavigationFont.png" />
     <Content Include="Source\NavigationLogo.png" />
     <Content Include="Source\NavigationBack.jpg" />

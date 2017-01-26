@@ -15,14 +15,15 @@
             background-repeat: no-repeat;
             background-size: cover;
             overflow-x: hidden;
+            height: 100%;
         }
 
         .Luoxun-Nav {
             position: fixed;
             top: 0px;
             z-index: 999;
-            background-color:#222222;
-            width:100%;
+            background-color: #222222;
+            width: 100%;
         }
 
 
@@ -93,12 +94,22 @@
         </div>
     </div>
     <div style="clear:both;"></div>
+
     <div class="Lunxun-Body">
         <span class="Body-Font">
             Welcome to LUOXUN!
         </span>
     </div>
     <div class="Lunxun-Next">
+        <a href="#body2" style="color:#ffffff;" onclick="Soopanel2();">跳转</a>
+    </div>
+    <div class="Lunxun-Body">
+        <span style="color:#ffffff;">我是第二个</span>
+        <a href="#body2" style="color:#ffffff;" onclick="Soopanel3();">跳转</a>
+    </div>
+    <div class="Lunxun-Body" style="margin-top:80px;">
+        <span style="color:#ffffff;">我是第三个</span>
+        <a href="#body2" style="color:#ffffff;" onclick="Soopanel1();">跳转</a>
     </div>
     <script src="../Scripts/jquery-1.10.2.js"></script>
     <script src="../Scripts/layui.js"></script>
@@ -114,7 +125,29 @@
         });
         $(function () {
             ShakeFont();
+
         })
+        function Soopanel2() {
+            console.log("ok");
+            $("body,html").animate({
+                scrollTop: 615
+            }, 1000);
+
+        }
+        function Soopanel3() {
+            console.log("ok");
+            $("body,html").animate({
+                scrollTop: 1176
+            }, 1000);
+
+        }
+        function Soopanel1() {
+            console.log("ok");
+            $("body,html").animate({
+                scrollTop: 0
+            }, 1000);
+
+        }
         function ShakeFont() {
 
             $(".Body-Font").animate({
