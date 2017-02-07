@@ -57,12 +57,30 @@
             top: 20%;
             opacity: 0.3;
         }
+
+        .Nav-right {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+        }
+
+            .Nav-right ul li {
+                margin-top: 10px;
+            }
+
+        .icon-top {
+            background-image: url('../Source/backtop.gif');
+            height:50px;
+            width:50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
     <div class="Luoxun-Nav">
         <div style="float:left;margin-left:100px;">
-            <img src="../Source/Navlogo_01.jpg" height="60px;" />
+            <img src="../Source/navone.jpg" height="60px;" />
         </div>
         <div style="float:right;">
             <ul class="layui-nav" lay-filter="filter" style="background-image:url('../Source/Nav_09.jpg')">
@@ -100,16 +118,27 @@
             Welcome to LUOXUN!
         </span>
     </div>
-    <div class="Lunxun-Next">
-        <a href="#body2" style="color:#ffffff;" onclick="Soopanel2();">跳转</a>
-    </div>
+    <a href="#body2" style="color:#ffffff;" onclick="Soopanel2();">
+        <div class="Lunxun-Next">
+
+        </div>
+    </a>
     <div class="Lunxun-Body">
-        <span style="color:#ffffff;">我是第二个</span>
-        <a href="#body2" style="color:#ffffff;" onclick="Soopanel3();">跳转</a>
+
     </div>
+    <a href="#body2" style="color:#ffffff;" onclick="Soopanel3();">
+        <div class="Lunxun-Next">
+
+        </div>
+    </a>
     <div class="Lunxun-Body" style="margin-top:80px;">
-        <span style="color:#ffffff;">我是第三个</span>
-        <a href="#body2" style="color:#ffffff;" onclick="Soopanel1();">跳转</a>
+    </div>
+    <div class="Nav-right">
+        <ul>
+            <li><button class="layui-btn layui-btn-normal layui-btn-small"><i class="layui-icon" onclick="Modulepro();">上一篇</i></button></li>
+            <li><button class="layui-btn layui-btn-normal layui-btn-small"><i class="layui-icon" onclick="Modulenext();">下一篇</i></button></li>
+            <li style="display:none;"><button class="layui-btn layui-btn-normal layui-btn-small"><i class="layui-icon" onclick="Soopanel1();">返回顶部</i></button></li>
+        </ul>
     </div>
     <script src="../Scripts/jquery-1.10.2.js"></script>
     <script src="../Scripts/layui.js"></script>
@@ -128,21 +157,18 @@
 
         })
         function Soopanel2() {
-            console.log("ok");
             $("body,html").animate({
-                scrollTop: 615
+                scrollTop: 700
             }, 1000);
 
         }
         function Soopanel3() {
-            console.log("ok");
             $("body,html").animate({
-                scrollTop: 1176
+                scrollTop: 1400
             }, 1000);
 
         }
         function Soopanel1() {
-            console.log("ok");
             $("body,html").animate({
                 scrollTop: 0
             }, 1000);
@@ -154,6 +180,39 @@
                 left: '20%',
                 opacity: 1
             }, 1000);
+        }
+        window.onscroll = function () {
+            //console.log(document.documentElement.scrollTop || document.body.scrollTop);
+            var scrotop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrotop >= 615) {
+                $(".Nav-right ul li:eq(2)").show();
+            } else {
+                $(".Nav-right ul li:eq(2)").hide();
+            }
+        }
+        function Modulenext() {
+            var scrotop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrotop < 700) {
+                $("body,html").animate({
+                    scrollTop: 700
+                }, 1000);
+            } else if (scrotop >= 700 && scrotop < 1400) {
+                $("body,html").animate({
+                    scrollTop: 1400
+                }, 1000);
+            }
+        }
+        function Modulepro() {
+            var scrotop = document.documentElement.scrollTop || document.body.scrollTop;
+            if (scrotop <= 700) {
+                $("body,html").animate({
+                    scrollTop: 0
+                }, 1000);
+            } else if (scrotop > 700 && scrotop <= 1400) {
+                $("body,html").animate({
+                    scrollTop: 700
+                }, 1000);
+            }
         }
     </script>
 </body>

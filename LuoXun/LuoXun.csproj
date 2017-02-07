@@ -222,6 +222,7 @@
     <Content Include="Scripts\star.js" />
     <Content Include="Scripts\swipe.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Source\backtop.gif" />
     <Content Include="Source\gaofan01.jpg" />
     <Content Include="Source\gaofan02.jpg" />
     <Content Include="Source\NavigationFont.png" />
@@ -229,6 +230,7 @@
     <Content Include="Source\NavigationBack.jpg" />
     <Content Include="Source\NavigationGif.gif" />
     <Content Include="Source\Navlogo_01.jpg" />
+    <Content Include="Source\navone.jpg" />
     <Content Include="Source\Nav_02.jpg" />
     <Content Include="Source\Nav_03.jpg" />
     <Content Include="Source\Nav_04.jpg" />
