@@ -179,6 +179,7 @@
     <Content Include="Content\btcss\bootstrap.min.css" />
     <Content Include="Content\layui.css" />
     <Content Include="Content\NavigationPage.css" />
+    <Content Include="Content\parallaxSlider.css" />
     <Content Include="Demo\Index.html" />
     <Content Include="Demo\Navigationpage.html" />
     <Content Include="favicon.ico" />
@@ -193,6 +194,8 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.easing.1.3.js" />
+    <Content Include="Scripts\jquery.touchSwipe.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -200,6 +203,7 @@
     <Content Include="Scripts\bt\bootstrap.js" />
     <Content Include="Scripts\bt\bootstrap.min.js" />
     <Content Include="Scripts\bt\npm.js" />
+    <Content Include="Scripts\jquery.velocity.min.js" />
     <Content Include="Scripts\layui.js" />
     <Content Include="Scripts\lay\dest\layui.all.js" />
     <Content Include="Scripts\lay\dest\layui.mod.js" />
@@ -217,6 +221,7 @@
     <Content Include="Scripts\lay\modules\upload.js" />
     <Content Include="Scripts\lay\modules\util.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\parallaxSlider.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\star.js" />
@@ -225,6 +230,19 @@
     <Content Include="Source\backtop.gif" />
     <Content Include="Source\gaofan01.jpg" />
     <Content Include="Source\gaofan02.jpg" />
+    <Content Include="Source\Max\1.jpg" />
+    <Content Include="Source\Max\2.jpg" />
+    <Content Include="Source\Max\3.jpg" />
+    <Content Include="Source\Max\4.jpg" />
+    <Content Include="Source\Max\5.jpg" />
+    <Content Include="Source\Max\6.jpg" />
+    <Content Include="Source\Max\ajax-loader.gif" />
+    <Content Include="Source\Max\bg.png" />
+    <Content Include="Source\Max\bg1.png" />
+    <Content Include="Source\Max\bg2.png" />
+    <Content Include="Source\Max\bg3.png" />
+    <Content Include="Source\Max\next.png" />
+    <Content Include="Source\Max\prev.png" />
     <Content Include="Source\NavigationFont.png" />
     <Content Include="Source\NavigationLogo.png" />
     <Content Include="Source\NavigationBack.jpg" />
@@ -241,6 +259,12 @@
     <Content Include="Source\Nav_09.jpg" />
     <Content Include="Source\Nav_10.jpg" />
     <Content Include="Source\Nav_11.jpg" />
+    <Content Include="Source\thumbs\1.jpg" />
+    <Content Include="Source\thumbs\2.jpg" />
+    <Content Include="Source\thumbs\3.jpg" />
+    <Content Include="Source\thumbs\4.jpg" />
+    <Content Include="Source\thumbs\5.jpg" />
+    <Content Include="Source\thumbs\6.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
