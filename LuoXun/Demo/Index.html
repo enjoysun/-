@@ -88,10 +88,13 @@
 </head>
 <body>
     <div class="Luoxun-Nav">
-        <div style="float:left;margin-left:100px;">
-            <img src="../Source/navone.jpg" height="60px;" />
+        <div style="margin-left:100px;display:inline-block;">
+            <img src="../Source/navone.jpg" height="60" />
         </div>
-        <div style="float:right;">
+        <div style="color:white;display:inline-block;">
+            <span class="nav-userinfo">欢迎您!</span>
+        </div>
+        <div style="display:inline-block;">
             <ul class="layui-nav" lay-filter="filter" style="background-image:url('../Source/Nav_09.jpg')">
                 <!--<li class="layui-nav-item layui-this"><a href="">产品</a></li>-->
                 <li class="layui-nav-item"><a href="">首页</a></li>
@@ -120,7 +123,7 @@
             </ul>
         </div>
     </div>
-    <div style="clear:both;"></div>
+    <!--<div style="clear:both;"></div>-->
 
     <div class="Lunxun-Banner">
         <span class="Body-Font">
@@ -182,6 +185,7 @@
         </ul>
     </div>
     <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jquery.cookie.js"></script>
     <script src="../Scripts/layui.js"></script>
     <script src="../Scripts/lay/modules/element.js"></script>
     <script src="../Scripts/jquery.easing.1.3.js"></script>
@@ -199,6 +203,13 @@
             //ShakeFont();
             var $pxs_container = $('#pxs_container');
             $pxs_container.parallaxSlider();
+            var info = $.cookie('singininfo');
+            if (info != null) {
+                var jsonmsg = JSON.parse(info.split("=")[1]);
+                $(".nav-userinfo").append("尊贵的" + jsonmsg.infocache);
+            } else {
+                $(".nav-userinfo").append("<a href='../SignIn/Login' style='color:blue;'>登陆入口</a>");
+            }
         })
         function Soopanel2() {
             $("body,html").animate({

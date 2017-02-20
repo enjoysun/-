@@ -1,0 +1,31 @@
+﻿.pancel-date {
+    border: 2px solid #5abdc1;
+    width: 200px;
+}
+
+    .pancel-date ul {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .pancel-date li {
+        list-style-type: none;
+        padding-bottom: 5px;
+    }
+
+    .pancel-date div {
+        display: inline-block;
+    }
+
+.pancel-yeardetail {
+    background-color: #00ffff;
+    text-align: center;
+}
+
+    .pancel-yeardetail div {
+        padding: 0 5px;
+    }
+
+.pancel-date table {
+    margin: 0 auto;
+}

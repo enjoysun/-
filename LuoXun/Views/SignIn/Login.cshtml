@@ -1,0 +1,38 @@
+﻿@model LuoXun.Models.Userinfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr>
+                <td>账户:</td>
+                <td>
+                    @Html.TextBoxFor(c => c.UserAccount)
+                </td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td>
+                    @Html.TextBoxFor(c => c.UserPassword)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="登陆" />
+                </td>
+            </tr>
+        </table>
+    }
+</body>
+</html>
