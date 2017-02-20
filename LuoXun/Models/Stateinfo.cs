@@ -10,5 +10,6 @@ namespace LuoXun.Models
         public int infocode { get; set; }
         public string infomessage { get; set; }
         public string infocache { get; set; }
+        public Guid userinfokey { get; set; }
     }
 }
